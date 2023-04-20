@@ -15,3 +15,5 @@ C:\Users\dianl\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\refint\Supe
 C:\Users\dianl\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.pdb
 C:\Users\dianl\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.genruntimeconfig.cache
 C:\Users\dianl\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\ref\Supermarket-mvp.dll
+C:\Users\dianl\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Properties.Resources.resources
+C:\Users\dianl\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Views.PayModelView.resources
