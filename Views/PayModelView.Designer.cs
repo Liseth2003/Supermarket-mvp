@@ -160,6 +160,7 @@
             // 
             DgPayMode.AllowUserToAddRows = false;
             DgPayMode.AllowUserToDeleteRows = false;
+            DgPayMode.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgPayMode.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgPayMode.Location = new Point(18, 89);
             DgPayMode.Name = "DgPayMode";
@@ -305,6 +306,7 @@
             Controls.Add(tabControl1);
             Controls.Add(panel1);
             Name = "PayModelView";
+            Load += PayModelView_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -316,6 +318,7 @@
             tabPagePayMdeDetail.PerformLayout();
             ResumeLayout(false);
         }
+
 
         #endregion
 
@@ -342,5 +345,6 @@
         private TextBox TxtPayModeObservation;
         private Button BtnCancel;
         private Button BtnSave;
+        private EventHandler PayModelView_Load;
     }
 }

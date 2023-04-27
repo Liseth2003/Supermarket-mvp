@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using Supermarket_mvp._Repositories;
+using Supermarket_mvp.Models;
+using Supermarket_mvp.Presenters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -110,5 +114,24 @@ namespace Supermarket_mvp.Views
         }
 
 
+        // Patrón singleton para controlar solo una instancia del formulario
+        private static PayModelView instance;
+
+        public static PayModelView GetInstance()
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new PayModelView();
+            }
+            else
+            {
+                if(instance.WindowState == FormWindowState.Minimized)
+                {
+                    instance.WindowState = FormWindowState.Normal;
+                }
+                instance.BringToFront();
+            }
+            return instance;
+        }
     }
 }
