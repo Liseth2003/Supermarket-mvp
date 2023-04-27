@@ -9,12 +9,12 @@ using Supermarket_mvp._Repositories;
 
 namespace Supermarket_mvp.Presenters
 {
-    internal class MainPresenters
+    internal class MainPresenter
     {
         private readonly IMainView mainView;
         private readonly string sqlConnectionString;
 
-        public MainPresenters(IMainView mainView, string sqlConnectionString)
+        public MainPresenter(IMainView mainView, string sqlConnectionString)
         {
             this.mainView = mainView;
             this.sqlConnectionString = sqlConnectionString;
