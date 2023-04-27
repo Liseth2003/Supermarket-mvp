@@ -38,37 +38,37 @@ namespace Supermarket_mvp.Views
             };
         }
 
-        public string PayModeId 
-        { 
+        public string PayModeId
+        {
             get { return TxtPayModeId.Text; }
             set { TxtPayModeId.Text = value; }
         }
-        public string PayModeName 
+        public string PayModeName
         {
             get { return TxtPayModeName.Text; }
             set { TxtPayModeId.Text = value; }
         }
-        public string PayModeObservation 
+        public string PayModeObservation
         {
             get { return TxtPayModeObservation.Text; }
             set { TxtPayModeObservation.Text = value; }
         }
-        public string SearchValue 
+        public string SearchValue
         {
             get { return TxtSearch.Text; }
             set { TxtSearch.Text = value; }
         }
-        public bool IsEdit 
+        public bool IsEdit
         {
             get { return isEdit; }
-            set { isEdit = value;  }
+            set { isEdit = value; }
         }
-        public bool IsSuccessful 
+        public bool IsSuccessful
         {
             get { return isSuccessful; }
             set { isSuccessful = value; }
         }
-        public string Message 
+        public string Message
         {
             get { return message; }
             set { message = value; }
@@ -86,9 +86,34 @@ namespace Supermarket_mvp.Views
             DgPayMode.DataSource = payModeList;
         }
 
+        //singleton para controlar solo una instancia del formulario
+        private static PayModeView instance;
+        public static PayModeView GetInstance(Form parentContainer)
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new PayModeView();
+                instance.MdiParent = parentContainer;
+
+
+                instance.FormBorderStyle = FormBorderStyle.None;
+                instance.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                if (instance.WindowState == FormWindowState.Minimized)
+                {
+                    instance.WindowState = FormWindowState.Normal;
+                }
+                instance.BringToFront();
+            }
+            return instance;
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+
     }
 }
