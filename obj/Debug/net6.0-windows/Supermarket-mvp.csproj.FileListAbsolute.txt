@@ -44,3 +44,4 @@ C:\Users\dianl\source\repos\Supermarket-mvp\bin\Debug\net6.0-windows\runtimes\wi
 C:\Users\dianl\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.csproj.CopyComplete
 C:\Users\dianl\source\repos\Supermarket-mvp\bin\Debug\net6.0-windows\Supermarket-mvp.dll.config
 C:\Users\dianl\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Views.MainView.resources
+C:\Users\dianl\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Views.PayModeView.resources
