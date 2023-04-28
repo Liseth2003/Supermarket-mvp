@@ -30,33 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PayModeView));
             panel1 = new Panel();
-            label1 = new Label();
             pictureBox1 = new PictureBox();
+            label1 = new Label();
             tabControl1 = new TabControl();
             tabPagePayModeList = new TabPage();
-            tabPagePayModeDetail = new TabPage();
-            lblSearchPayMode = new Label();
-            TxtSearch = new TextBox();
-            BtnSearch = new Button();
-            DgPayMode = new DataGridView();
-            BtnNew = new Button();
-            BtnEdit = new Button();
-            BtnDelete = new Button();
             BtnClose = new Button();
-            lblPayModeId = new Label();
-            TxtPayModeId = new TextBox();
-            textBox2 = new TextBox();
-            TxtPayModeName = new Label();
+            BtnDelete = new Button();
+            BtnEdit = new Button();
+            BtnNew = new Button();
+            DgPayMode = new DataGridView();
+            BtnSearch = new Button();
+            TxtSearch = new TextBox();
+            lblSearchPayMode = new Label();
+            tabPagePayModeDetail = new TabPage();
+            BtnCancel = new Button();
+            BtnSave = new Button();
             textBox3 = new TextBox();
             TxtPayModeObservation = new Label();
-            BtnSave = new Button();
-            BtnCancel = new Button();
+            textBox2 = new TextBox();
+            TxtPayModeName = new Label();
+            TxtPayModeId = new TextBox();
+            lblPayModeId = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
             tabPagePayModeList.SuspendLayout();
-            tabPagePayModeDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DgPayMode).BeginInit();
+            tabPagePayModeDetail.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -65,40 +65,43 @@
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 125);
+            panel1.Size = new Size(825, 94);
             panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 2);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(123, 92);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial Rounded MT Bold", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(147, 41);
+            label1.Location = new Point(129, 31);
             label1.Name = "label1";
-            label1.Size = new Size(256, 51);
+            label1.Size = new Size(202, 40);
             label1.TabIndex = 0;
             label1.Text = "PAY MODE";
             label1.Click += label1_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(141, 122);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
             // 
             // tabControl1
             // 
             tabControl1.Controls.Add(tabPagePayModeList);
             tabControl1.Controls.Add(tabPagePayModeDetail);
             tabControl1.Dock = DockStyle.Fill;
-            tabControl1.Location = new Point(0, 125);
+            tabControl1.Location = new Point(0, 94);
+            tabControl1.Margin = new Padding(3, 2, 3, 2);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(800, 429);
+            tabControl1.Size = new Size(825, 403);
             tabControl1.TabIndex = 1;
             // 
             // tabPagePayModeList
@@ -112,13 +115,102 @@
             tabPagePayModeList.Controls.Add(BtnSearch);
             tabPagePayModeList.Controls.Add(TxtSearch);
             tabPagePayModeList.Controls.Add(lblSearchPayMode);
-            tabPagePayModeList.Location = new Point(4, 29);
+            tabPagePayModeList.Location = new Point(4, 24);
+            tabPagePayModeList.Margin = new Padding(3, 2, 3, 2);
             tabPagePayModeList.Name = "tabPagePayModeList";
-            tabPagePayModeList.Padding = new Padding(3);
-            tabPagePayModeList.Size = new Size(792, 396);
+            tabPagePayModeList.Padding = new Padding(3, 2, 3, 2);
+            tabPagePayModeList.Size = new Size(817, 375);
             tabPagePayModeList.TabIndex = 0;
             tabPagePayModeList.Text = "Pay Mode List";
             tabPagePayModeList.UseVisualStyleBackColor = true;
+            // 
+            // BtnClose
+            // 
+            BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnClose.Image = (Image)resources.GetObject("BtnClose.Image");
+            BtnClose.Location = new Point(466, 241);
+            BtnClose.Margin = new Padding(3, 2, 3, 2);
+            BtnClose.Name = "BtnClose";
+            BtnClose.Size = new Size(210, 50);
+            BtnClose.TabIndex = 7;
+            BtnClose.UseVisualStyleBackColor = true;
+            // 
+            // BtnDelete
+            // 
+            BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnDelete.Image = (Image)resources.GetObject("BtnDelete.Image");
+            BtnDelete.Location = new Point(466, 182);
+            BtnDelete.Margin = new Padding(3, 2, 3, 2);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new Size(210, 55);
+            BtnDelete.TabIndex = 6;
+            BtnDelete.UseVisualStyleBackColor = true;
+            // 
+            // BtnEdit
+            // 
+            BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnEdit.Image = (Image)resources.GetObject("BtnEdit.Image");
+            BtnEdit.Location = new Point(466, 116);
+            BtnEdit.Margin = new Padding(3, 2, 3, 2);
+            BtnEdit.Name = "BtnEdit";
+            BtnEdit.Size = new Size(210, 61);
+            BtnEdit.TabIndex = 5;
+            BtnEdit.UseVisualStyleBackColor = true;
+            // 
+            // BtnNew
+            // 
+            BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnNew.Image = (Image)resources.GetObject("BtnNew.Image");
+            BtnNew.Location = new Point(466, 54);
+            BtnNew.Margin = new Padding(3, 2, 3, 2);
+            BtnNew.Name = "BtnNew";
+            BtnNew.Size = new Size(210, 58);
+            BtnNew.TabIndex = 4;
+            BtnNew.UseVisualStyleBackColor = true;
+            // 
+            // DgPayMode
+            // 
+            DgPayMode.AllowUserToAddRows = false;
+            DgPayMode.AllowUserToDeleteRows = false;
+            DgPayMode.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            DgPayMode.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgPayMode.Location = new Point(19, 54);
+            DgPayMode.Margin = new Padding(3, 2, 3, 2);
+            DgPayMode.Name = "DgPayMode";
+            DgPayMode.ReadOnly = true;
+            DgPayMode.RowHeadersWidth = 51;
+            DgPayMode.RowTemplate.Height = 29;
+            DgPayMode.Size = new Size(414, 237);
+            DgPayMode.TabIndex = 3;
+            // 
+            // BtnSearch
+            // 
+            BtnSearch.Image = (Image)resources.GetObject("BtnSearch.Image");
+            BtnSearch.Location = new Point(387, 11);
+            BtnSearch.Margin = new Padding(3, 2, 3, 2);
+            BtnSearch.Name = "BtnSearch";
+            BtnSearch.Size = new Size(46, 38);
+            BtnSearch.TabIndex = 2;
+            BtnSearch.UseVisualStyleBackColor = true;
+            // 
+            // TxtSearch
+            // 
+            TxtSearch.Location = new Point(17, 28);
+            TxtSearch.Margin = new Padding(3, 2, 3, 2);
+            TxtSearch.Name = "TxtSearch";
+            TxtSearch.PlaceholderText = "Data To Search";
+            TxtSearch.Size = new Size(365, 23);
+            TxtSearch.TabIndex = 1;
+            // 
+            // lblSearchPayMode
+            // 
+            lblSearchPayMode.AutoSize = true;
+            lblSearchPayMode.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSearchPayMode.Location = new Point(17, 6);
+            lblSearchPayMode.Name = "lblSearchPayMode";
+            lblSearchPayMode.Size = new Size(128, 20);
+            lblSearchPayMode.TabIndex = 0;
+            lblSearchPayMode.Text = "Search Pay Mode";
             // 
             // tabPagePayModeDetail
             // 
@@ -131,169 +223,100 @@
             tabPagePayModeDetail.Controls.Add(TxtPayModeName);
             tabPagePayModeDetail.Controls.Add(TxtPayModeId);
             tabPagePayModeDetail.Controls.Add(lblPayModeId);
-            tabPagePayModeDetail.Location = new Point(4, 29);
+            tabPagePayModeDetail.Location = new Point(4, 24);
+            tabPagePayModeDetail.Margin = new Padding(3, 2, 3, 2);
             tabPagePayModeDetail.Name = "tabPagePayModeDetail";
-            tabPagePayModeDetail.Padding = new Padding(3);
-            tabPagePayModeDetail.Size = new Size(792, 396);
+            tabPagePayModeDetail.Padding = new Padding(3, 2, 3, 2);
+            tabPagePayModeDetail.Size = new Size(692, 294);
             tabPagePayModeDetail.TabIndex = 1;
             tabPagePayModeDetail.Text = "Pay Mode Detail";
             tabPagePayModeDetail.UseVisualStyleBackColor = true;
             // 
-            // lblSearchPayMode
+            // BtnCancel
             // 
-            lblSearchPayMode.AutoSize = true;
-            lblSearchPayMode.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSearchPayMode.Location = new Point(19, 8);
-            lblSearchPayMode.Name = "lblSearchPayMode";
-            lblSearchPayMode.Size = new Size(159, 25);
-            lblSearchPayMode.TabIndex = 0;
-            lblSearchPayMode.Text = "Search Pay Mode";
+            BtnCancel.Image = (Image)resources.GetObject("BtnCancel.Image");
+            BtnCancel.Location = new Point(226, 233);
+            BtnCancel.Margin = new Padding(3, 2, 3, 2);
+            BtnCancel.Name = "BtnCancel";
+            BtnCancel.Size = new Size(123, 58);
+            BtnCancel.TabIndex = 7;
+            BtnCancel.UseVisualStyleBackColor = true;
             // 
-            // TxtSearch
+            // BtnSave
             // 
-            TxtSearch.Location = new Point(19, 38);
-            TxtSearch.Name = "TxtSearch";
-            TxtSearch.PlaceholderText = "Data To Search";
-            TxtSearch.Size = new Size(417, 27);
-            TxtSearch.TabIndex = 1;
-            // 
-            // BtnSearch
-            // 
-            BtnSearch.Image = (Image)resources.GetObject("BtnSearch.Image");
-            BtnSearch.Location = new Point(442, 15);
-            BtnSearch.Name = "BtnSearch";
-            BtnSearch.Size = new Size(53, 50);
-            BtnSearch.TabIndex = 2;
-            BtnSearch.UseVisualStyleBackColor = true;
-            // 
-            // DgPayMode
-            // 
-            DgPayMode.AllowUserToAddRows = false;
-            DgPayMode.AllowUserToDeleteRows = false;
-            DgPayMode.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgPayMode.Location = new Point(22, 72);
-            DgPayMode.Name = "DgPayMode";
-            DgPayMode.ReadOnly = true;
-            DgPayMode.RowHeadersWidth = 51;
-            DgPayMode.RowTemplate.Height = 29;
-            DgPayMode.Size = new Size(473, 316);
-            DgPayMode.TabIndex = 3;
-            // 
-            // BtnNew
-            // 
-            BtnNew.Image = (Image)resources.GetObject("BtnNew.Image");
-            BtnNew.Location = new Point(532, 72);
-            BtnNew.Name = "BtnNew";
-            BtnNew.Size = new Size(240, 77);
-            BtnNew.TabIndex = 4;
-            BtnNew.UseVisualStyleBackColor = true;
-            // 
-            // BtnEdit
-            // 
-            BtnEdit.Image = (Image)resources.GetObject("BtnEdit.Image");
-            BtnEdit.Location = new Point(532, 155);
-            BtnEdit.Name = "BtnEdit";
-            BtnEdit.Size = new Size(240, 81);
-            BtnEdit.TabIndex = 5;
-            BtnEdit.UseVisualStyleBackColor = true;
-            // 
-            // BtnDelete
-            // 
-            BtnDelete.Image = (Image)resources.GetObject("BtnDelete.Image");
-            BtnDelete.Location = new Point(532, 242);
-            BtnDelete.Name = "BtnDelete";
-            BtnDelete.Size = new Size(240, 73);
-            BtnDelete.TabIndex = 6;
-            BtnDelete.UseVisualStyleBackColor = true;
-            // 
-            // BtnClose
-            // 
-            BtnClose.Image = (Image)resources.GetObject("BtnClose.Image");
-            BtnClose.Location = new Point(532, 321);
-            BtnClose.Name = "BtnClose";
-            BtnClose.Size = new Size(240, 67);
-            BtnClose.TabIndex = 7;
-            BtnClose.UseVisualStyleBackColor = true;
-            // 
-            // lblPayModeId
-            // 
-            lblPayModeId.AutoSize = true;
-            lblPayModeId.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPayModeId.Location = new Point(32, 20);
-            lblPayModeId.Name = "lblPayModeId";
-            lblPayModeId.Size = new Size(110, 23);
-            lblPayModeId.TabIndex = 0;
-            lblPayModeId.Text = "Pay Mode Id";
-            // 
-            // TxtPayModeId
-            // 
-            TxtPayModeId.Location = new Point(32, 46);
-            TxtPayModeId.Name = "TxtPayModeId";
-            TxtPayModeId.Size = new Size(258, 27);
-            TxtPayModeId.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(32, 119);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Pay Mode Name";
-            textBox2.Size = new Size(367, 27);
-            textBox2.TabIndex = 3;
-            // 
-            // TxtPayModeName
-            // 
-            TxtPayModeName.AutoSize = true;
-            TxtPayModeName.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtPayModeName.Location = new Point(32, 93);
-            TxtPayModeName.Name = "TxtPayModeName";
-            TxtPayModeName.Size = new Size(141, 23);
-            TxtPayModeName.TabIndex = 2;
-            TxtPayModeName.Text = "Pay Mode Name";
+            BtnSave.Image = (Image)resources.GetObject("BtnSave.Image");
+            BtnSave.Location = new Point(28, 233);
+            BtnSave.Margin = new Padding(3, 2, 3, 2);
+            BtnSave.Name = "BtnSave";
+            BtnSave.Size = new Size(123, 58);
+            BtnSave.TabIndex = 6;
+            BtnSave.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(32, 199);
+            textBox3.Location = new Point(28, 149);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = "Pay Mode Observation";
-            textBox3.Size = new Size(367, 88);
+            textBox3.Size = new Size(322, 67);
             textBox3.TabIndex = 5;
             // 
             // TxtPayModeObservation
             // 
             TxtPayModeObservation.AutoSize = true;
             TxtPayModeObservation.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtPayModeObservation.Location = new Point(32, 173);
+            TxtPayModeObservation.Location = new Point(28, 130);
             TxtPayModeObservation.Name = "TxtPayModeObservation";
-            TxtPayModeObservation.Size = new Size(192, 23);
+            TxtPayModeObservation.Size = new Size(164, 19);
             TxtPayModeObservation.TabIndex = 4;
             TxtPayModeObservation.Text = "Pay Mode Observation";
             // 
-            // BtnSave
+            // textBox2
             // 
-            BtnSave.Image = (Image)resources.GetObject("BtnSave.Image");
-            BtnSave.Location = new Point(32, 311);
-            BtnSave.Name = "BtnSave";
-            BtnSave.Size = new Size(141, 77);
-            BtnSave.TabIndex = 6;
-            BtnSave.UseVisualStyleBackColor = true;
+            textBox2.Location = new Point(28, 89);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
+            textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "Pay Mode Name";
+            textBox2.Size = new Size(322, 23);
+            textBox2.TabIndex = 3;
             // 
-            // BtnCancel
+            // TxtPayModeName
             // 
-            BtnCancel.Image = (Image)resources.GetObject("BtnCancel.Image");
-            BtnCancel.Location = new Point(258, 311);
-            BtnCancel.Name = "BtnCancel";
-            BtnCancel.Size = new Size(141, 77);
-            BtnCancel.TabIndex = 7;
-            BtnCancel.UseVisualStyleBackColor = true;
+            TxtPayModeName.AutoSize = true;
+            TxtPayModeName.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtPayModeName.Location = new Point(28, 70);
+            TxtPayModeName.Name = "TxtPayModeName";
+            TxtPayModeName.Size = new Size(121, 19);
+            TxtPayModeName.TabIndex = 2;
+            TxtPayModeName.Text = "Pay Mode Name";
+            // 
+            // TxtPayModeId
+            // 
+            TxtPayModeId.Location = new Point(28, 34);
+            TxtPayModeId.Margin = new Padding(3, 2, 3, 2);
+            TxtPayModeId.Name = "TxtPayModeId";
+            TxtPayModeId.Size = new Size(226, 23);
+            TxtPayModeId.TabIndex = 1;
+            // 
+            // lblPayModeId
+            // 
+            lblPayModeId.AutoSize = true;
+            lblPayModeId.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPayModeId.Location = new Point(28, 15);
+            lblPayModeId.Name = "lblPayModeId";
+            lblPayModeId.Size = new Size(94, 19);
+            lblPayModeId.TabIndex = 0;
+            lblPayModeId.Text = "Pay Mode Id";
             // 
             // PayModeView
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 554);
+            ClientSize = new Size(825, 497);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "PayModeView";
             Text = "PayModeView";
             panel1.ResumeLayout(false);
@@ -302,9 +325,9 @@
             tabControl1.ResumeLayout(false);
             tabPagePayModeList.ResumeLayout(false);
             tabPagePayModeList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DgPayMode).EndInit();
             tabPagePayModeDetail.ResumeLayout(false);
             tabPagePayModeDetail.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)DgPayMode).EndInit();
             ResumeLayout(false);
         }
 
